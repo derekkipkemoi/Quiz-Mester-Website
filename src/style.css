@@ -729,3 +729,228 @@ a {
     font-size: 13px;
   }
 }
+
+/* Legal pages */
+
+.legal-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(73, 36, 145, 0.28), transparent 30%),
+    radial-gradient(circle at 90% 35%, rgba(120, 17, 85, 0.18), transparent 32%),
+    var(--bg);
+}
+
+.legal-page__header {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 82px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.legal-page__play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0 20px;
+
+  border: 1px solid rgba(149, 88, 255, 0.45);
+  border-radius: 12px;
+
+  background: rgba(149, 88, 255, 0.1);
+  color: var(--white);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.legal-page__play:hover {
+  background: rgba(149, 88, 255, 0.18);
+  border-color: rgba(149, 88, 255, 0.7);
+  transform: translateY(-1px);
+}
+
+.legal-page__content {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.legal-page__back {
+  display: inline-flex;
+  margin-bottom: 42px;
+
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: color 160ms ease;
+}
+
+.legal-page__back:hover {
+  color: var(--white);
+}
+
+.legal-page__intro {
+  margin-bottom: 48px;
+}
+
+.legal-page__intro .eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.legal-page__intro h1 {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 6vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.legal-page__intro p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.legal-page__body {
+  padding: 38px 42px;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+
+  background: rgba(28, 21, 47, 0.58);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.025),
+    0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.legal-page__body section + section {
+  margin-top: 38px;
+  padding-top: 38px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.legal-page__body h2 {
+  margin: 0 0 14px;
+
+  color: var(--white);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.legal-page__body p {
+  margin: 0;
+
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.8;
+}
+
+.legal-page__body p + p {
+  margin-top: 14px;
+}
+
+.legal-page__body strong {
+  color: var(--white);
+}
+
+.legal-page__body a {
+  color: #b993ff;
+  font-weight: 600;
+}
+
+.legal-page__body a:hover {
+  color: var(--white);
+}
+
+.legal-page__footer {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 28px 0 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.legal-page__footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.legal-page__footer a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 640px) {
+  .legal-page__header {
+    width: min(100% - 28px, 1180px);
+    min-height: 72px;
+  }
+
+  .legal-page__header .brand__name {
+    font-size: 0.78rem;
+  }
+
+  .legal-page__play {
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 0.78rem;
+  }
+
+  .legal-page__content {
+    width: min(100% - 28px, 900px);
+    padding: 34px 0 52px;
+  }
+
+  .legal-page__back {
+    margin-bottom: 30px;
+  }
+
+  .legal-page__intro {
+    margin-bottom: 30px;
+  }
+
+  .legal-page__body {
+    padding: 26px 22px;
+    border-radius: 20px;
+  }
+
+  .legal-page__body section + section {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .legal-page__footer {
+    width: min(100% - 28px, 1180px);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .legal-page__footer > div {
+    justify-content: flex-start;
+    gap: 12px 18px;
+  }
+}

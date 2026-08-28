@@ -1,6 +1,21 @@
 import './style.css';
 
+import { renderPrivacyPage } from './pages/privacy';
+import { renderTermsPage } from './pages/terms';
+import { renderDataDeletionPage } from './pages/dataDeletion';
+
 const GAME_URL = 'https://fb.gg/play/1949163112664936';
+
+const path = window.location.pathname.replace(/\/$/, '') || '/';
+
+if (path === '/privacy') {
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderPrivacyPage();
+} else if (path === '/terms') {
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderTermsPage();
+} else if (path === '/data-deletion') {
+  document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderDataDeletionPage();
+} else {
+
 
 const categories = [
   ['🌍', 'General Knowledge', 'Test your knowledge of the world around you.'],
@@ -218,3 +233,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
   </div>
 `;
+}
