@@ -39,15 +39,17 @@ export function renderPrivacyPage(): string {
           <section>
             <h2>2. Information We Handle</h2>
             <p>
-              Quiz Mestar stores quiz results locally on your device or
-              browser. This information may include your quiz score,
-              number of correct answers, number of questions, category,
-              and the date and time of a completed quiz.
+              Quiz Mestar currently stores quiz results locally on your
+              device or browser. A stored quiz result may contain an
+              internal result identifier, your Facebook Instant Games
+              player identifier when the game is running through Facebook,
+              the quiz category, your score, number of correct answers,
+              number of questions, best streak, and the date and time the
+              quiz was completed.
             </p>
             <p>
-              When Quiz Mestar is played through Facebook Instant Games,
-              locally stored results may be associated with the Facebook
-              Instant Games player identifier provided to the game.
+              Quiz Mestar uses this information to maintain your local quiz
+              history and display your previous quiz performance.
             </p>
           </section>
 
@@ -68,14 +70,24 @@ export function renderPrivacyPage(): string {
             <h2>4. Facebook and Meta</h2>
             <p>
               Quiz Mestar is available through Facebook Instant Games.
-              When you play through Facebook, Facebook and Meta may process
-              information in accordance with their own privacy policies,
-              terms, and platform functionality.
+              When the game runs through Facebook, it uses the Facebook
+              Instant Games platform and its software development kit (SDK).
+              The game requests the player identifier provided by the
+              Facebook Instant Games platform so that gameplay results can
+              be associated with the appropriate local player data.
             </p>
             <p>
-              Quiz Mestar does not control information that Facebook or
-              Meta independently collects or processes through their
-              platform.
+              Facebook and Meta may independently collect and process
+              information when you use their services, including information
+              related to your Facebook account, platform activity, device,
+              or advertising interactions. Such processing is controlled by
+              Facebook and Meta and is subject to their applicable privacy
+              policies and terms.
+            </p>
+            <p>
+              Quiz Mestar does not operate or control Facebook's systems and
+              cannot access or control information that Meta processes
+              independently through its platform.
             </p>
           </section>
 
