@@ -206,30 +206,40 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </main>
 
     <footer class="footer">
-      <div class="footer__top">
-        <a class="brand" href="/">
-          <span class="brand__crown">♛</span>
-          <span class="brand__name">
-            <strong>QUIZ</strong>
-            <span>MESTAR</span>
-          </span>
-        </a>
+  <div class="footer__top">
+    <a class="brand" href="/">
+      <span class="brand__crown">♛</span>
+      <span class="brand__name">
+        <strong>QUIZ</strong>
+        <span>MESTAR</span>
+      </span>
+    </a>
 
-        <p>
-          Test your knowledge. Beat the timer. Become the Mestar.
-        </p>
-      </div>
+    <p>
+      Test your knowledge. Beat the timer. Become the Mestar.
+    </p>
+  </div>
 
-      <div class="footer__bottom">
-        <span>© 2026 Quiz Mestar. All rights reserved.</span>
+  <div class="footer__company">
+    <p>
+      Quiz Mestar is developed and operated by
+      <strong>Techbra Multi Tech Solutions</strong>,
+      a software development company based in Kenya.
+    </p>
+  </div>
 
-        <div class="footer__links">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/terms">Terms & Conditions</a>
-          <a href="/data-deletion">Data Deletion</a>
-        </div>
-      </div>
-    </footer>
+  <div class="footer__bottom">
+    <span>
+      © 2026 Techbra Multi Tech Solutions. Quiz Mestar. All rights reserved.
+    </span>
+
+    <div class="footer__links">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms & Conditions</a>
+      <a href="/data-deletion">Data Deletion</a>
+    </div>
+  </div>
+</footer>
 
   </div>
 `;
